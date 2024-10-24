@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./componen/header";
 import Footer from "./componen/footer";
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -49,6 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-5684RDJT" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
